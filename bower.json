@@ -8,6 +8,10 @@
   "authors": [
     "Denni Adam <dennila2@ya.ru>"
   ],
+	"repository": {
+    "type": "git",
+    "url": "git@github.com:DenniLa2/ionic-dm-combobox.git"
+	},
   "description": "ionic-modal-combobox directive",
   "keywords": [
     "ionic-angular",
