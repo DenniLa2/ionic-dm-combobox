@@ -43,7 +43,7 @@ angular.module('comboBoxDirective', [])
         
         var closeOnSelect = $attrs.hasOwnProperty('cbxCloseOnSelect');
 
-        $ionicModal.fromTemplateUrl('js/directives/combo-box/combo-box-modal.html', {
+        $ionicModal.fromTemplateUrl('lib/ionic-combo-box/combo-box-modal.html', {
           scope: $scope,
           animation: 'slide-in-up'
         }).then(function (modal) {
