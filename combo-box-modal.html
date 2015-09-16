@@ -1,0 +1,42 @@
+<ion-modal-view>
+  <ion-content>
+    <div class="bar bar-header bar-positive item-input-inset">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="text"
+               ng-model="data.query"
+               ng-change="onChange()"
+               placeholder="{{ cbxPlaceholder }}">
+        <i class="icon ion-close placeholder-icon"
+           ng-click="clearQuery()"
+           on-touch="clearQuery()"
+           ng-show="data.query.length > 0"></i>
+      </label>
+      <button class="button button-clear"
+              ng-click="closeModal()">
+        Ok
+      </button>
+    </div>
+
+    <div class="list">
+
+      <div class="item item-divider"
+           ng-show="(cbxArray | filter:{value:data.query}).length > 0"
+           ng-bind="cbxFilterCaption">
+      </div>
+
+      <div class="item"
+           ng-repeat="item in cbxArray | filter:{value:data.query}"
+           ng-click="selectItem(item.num)">
+        {{ item.value }}
+      </div>
+
+      <div class="item item-divider"
+           ng-show="(cbxArray | filter:{value:data.query}).length == 0"
+           ng-bind="cbxEmptyFilterCaption">
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-modal-view>
