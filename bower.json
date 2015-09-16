@@ -1,0 +1,21 @@
+{
+  "name": "ionic-combo-box",
+  "main": [
+  		"combo-box.js",
+			"combo-box-modal.html"
+  ],
+  "version": "0.0.1",
+  "authors": [
+    "Denni Adam <dennila2@ya.ru>"
+  ],
+  "description": "ionic-modal-combobox directive",
+  "keywords": [
+    "ionic-angular",
+    "modal-combobox",
+    "directive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*"
+  ]
+}
