@@ -37,7 +37,12 @@ angular.module('comboBoxDirective', [])
         } else {
           console.error('comboBox error: use comboBox or cbxArr');
         }
-        
+
+        $scope.cbxHeaderClass = $scope.cbxHeaderClass || 'bar-positive';
+        $scope.cbxFindIconStyle = $scope.cbxFindIconStyle || 'ion-ios-search';
+        $scope.cbxOkCaption = $scope.cbxOkCaption || 'Ok';
+
+
         $scope.cbxFilterCaption = $scope.cbxFilterCaption || 'Фильтр данных';
         $scope.cbxEmptyFilterCaption = $scope.cbxEmptyFilterCaption || 'Поиск не дал результатов';
         
@@ -81,7 +86,10 @@ angular.module('comboBoxDirective', [])
         cbxPlaceholder: '@',
         cbxFilterCaption: '@',
         cbxEmptyFilterCaption: '@',
-        cbxCloseOnSelect: '@'
+        cbxCloseOnSelect: '@',
+        cbxHeaderClass: '@',
+        cbxFindIconStyle: '@',
+        cbxOkCaption: '@'
       }
     };
   })

@@ -1,5 +1,5 @@
-ionic-combobox
-==============
+ionic-combobox v0.0.3
+=====================
 
 This directive add modal-combobox for select from the list or add new element.
 
@@ -24,6 +24,10 @@ Usage
         cbx-placeholder="Item"
         cbx-filter-caption="used items:"
         cbxEmptyFilterCaption="No items found"
-        cbx-close-on-select></div>
+        cbx-close-on-select
+        cbxHeaderClass="bar-royal"
+        cbxFindIconStyle="ion-ios-search"
+        cbxOkCaption="Select"
+        ></div>
       
     

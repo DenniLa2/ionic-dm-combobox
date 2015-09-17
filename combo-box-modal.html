@@ -1,9 +1,11 @@
 <ion-modal-view>
   <ion-content>
-    <div class="bar bar-header bar-positive item-input-inset">
+    <div class="bar bar-header item-input-inset"
+         ng-class="cbxHeaderClass">
       <label class="item-input-wrapper">
-        <i class="icon ion-ios-search placeholder-icon"></i>
+        <i class="icon {{ cbxFindIconStyle }} placeholder-icon"></i>
         <input type="text"
+               autofocus
                ng-model="data.query"
                ng-change="onChange()"
                placeholder="{{ cbxPlaceholder }}">
@@ -14,7 +16,7 @@
       </label>
       <button class="button button-clear"
               ng-click="closeModal()">
-        Ok
+        {{ cbxOkCaption }}
       </button>
     </div>
 
