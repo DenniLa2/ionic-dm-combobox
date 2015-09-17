@@ -1,4 +1,4 @@
-ionic-combobox v0.0.3
+ionic-combobox v0.0.4
 =====================
 
 This directive add modal-combobox for select from the list or add new element.

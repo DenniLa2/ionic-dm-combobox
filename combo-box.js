@@ -13,7 +13,7 @@ angular.module('comboBoxDirective', [])
    *    cbx-placeholder="Событие"
    * >
    */
-  .directive('comboBox', function factory() {
+  .directive('comboBox', function factory($timeout) {
     return {
       // E -> <my-dir>, A -> <p my-dir="value">, C -> in class, M -> in comment
       restrict: 'A',
@@ -50,7 +50,8 @@ angular.module('comboBoxDirective', [])
 
         $ionicModal.fromTemplateUrl('lib/ionic-combo-box/combo-box-modal.html', {
           scope: $scope,
-          animation: 'slide-in-up'
+          animation: 'slide-in-up',
+          focusFirstInput: true
         }).then(function (modal) {
           $scope.modal = modal;
         });

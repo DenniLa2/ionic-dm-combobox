@@ -5,10 +5,10 @@
       <label class="item-input-wrapper">
         <i class="icon {{ cbxFindIconStyle }} placeholder-icon"></i>
         <input type="text"
-               autofocus
+               id="query"
                ng-model="data.query"
                ng-change="onChange()"
-               placeholder="{{ cbxPlaceholder }}">
+               placeholder="{{ cbxPlaceholder }}"><!-- autofocus -->
         <i class="icon ion-close placeholder-icon"
            ng-click="clearQuery()"
            on-touch="clearQuery()"
