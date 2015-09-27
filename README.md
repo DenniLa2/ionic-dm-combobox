@@ -27,7 +27,6 @@ Usage
         cbxEmptyFilterCaption="No items found"
         cbx-close-on-select
         cbxHeaderClass="bar-royal"
-        - cbxFindIconStyle="ion-ios-search" - deleted
         cbxOkCaption="Select"
         ></div>
       
