@@ -10,6 +10,7 @@ installation
     
 in index.html add:
 
+    <link href="lib/ionic-combo-box/combo-box.css" rel="stylesheet">
     <script src="lib/ionic-combo-box/combo-box.js"></script>
 
 in app.js:
@@ -26,7 +27,7 @@ Usage
         cbxEmptyFilterCaption="No items found"
         cbx-close-on-select
         cbxHeaderClass="bar-royal"
-        cbxFindIconStyle="ion-ios-search"
+        - cbxFindIconStyle="ion-ios-search" - deleted
         cbxOkCaption="Select"
         ></div>
       

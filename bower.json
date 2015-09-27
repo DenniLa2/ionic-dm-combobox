@@ -2,7 +2,8 @@
   "name": "ionic-combo-box",
   "main": [
   		"combo-box.js",
-			"combo-box-modal.html"
+			"combo-box-modal.html",
+      "combo-box.css"
   ],
   "version": "0.0.4",
   "authors": [
