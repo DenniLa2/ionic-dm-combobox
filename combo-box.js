@@ -39,7 +39,7 @@ angular.module('comboBoxDirective', [])
         }
 
         $scope.cbxHeaderClass = $scope.cbxHeaderClass || 'bar-positive';
-        $scope.cbxFindIconStyle = $scope.cbxFindIconStyle || 'ion-ios-search';
+        //$scope.cbxFindIconStyle = $scope.cbxFindIconStyle || 'ion-ios-search';
         $scope.cbxOkCaption = $scope.cbxOkCaption || 'Ok';
 
 
@@ -89,7 +89,7 @@ angular.module('comboBoxDirective', [])
         cbxEmptyFilterCaption: '@',
         cbxCloseOnSelect: '@',
         cbxHeaderClass: '@',
-        cbxFindIconStyle: '@',
+        //cbxFindIconStyle: '@',
         cbxOkCaption: '@'
       }
     };
